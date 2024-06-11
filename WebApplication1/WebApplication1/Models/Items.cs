@@ -13,5 +13,7 @@ public class Items
     public string Name { get; set; }
     
     public int Weight { get; set; }
-    
+
+    public ICollection<Backpacks> Backpacks { get; set; } = new HashSet<Backpacks>();
+
 }

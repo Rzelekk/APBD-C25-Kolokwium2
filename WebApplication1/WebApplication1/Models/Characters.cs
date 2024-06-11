@@ -14,4 +14,7 @@ public class Characters
     public string LastName { get; set; }
     public int CurrentWei { get; set; }
     public int MaxWeight { get; set; }
+    
+    public ICollection<Backpacks> Backpacks { get; set; } = new HashSet<Backpacks>();
+    public ICollection<CharacterTitles> CharacterTitles { get; set; } = new HashSet<CharacterTitles>();
 }

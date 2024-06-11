@@ -11,4 +11,5 @@ public class Titles
     [MaxLength(100)] 
     public string Name { get; set; }
     
+    public ICollection<CharacterTitles> CharacterTitles { get; set; } = new HashSet<CharacterTitles>();
 }
